@@ -115,7 +115,9 @@ One-third of borrowers income is not verified. This could be due to various reas
 Most borrowers have opted for short term loans, i.e, 36 months. Lenders may encourage or prefer shorter-term loans to mitigate their risk exposure. Opting for a shorter-term loan could mean higher monthly payments but also a quicker payoff, allowing borrowers to free up their budgets sooner.
 
 Only 5% borrowers having default means stable economic conditions and reflects positively on the lender's ability to evaluate credit risk and make sound lending decisions.
----
+
+![This is Screenshot of Borrowers from US State.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_PieCharts.png)
+
 Majority Borrowers are from California, New York, Texas and Florida. The concentration of borrowers in these states could be influenced by higher population density and increased economic activity. Borrowers from economically stable regions may have greater confidence in their ability to repay loans.
 
 ![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Range_Borrowers.png)
@@ -161,3 +163,34 @@ Thus we can keep one of them and drop rest to reduce the redundancy in feature w
 
 We are now left with **30 columns** and **797436 instances** to work with.
 
+# 5. Modeling
+### 1. Random Forest Classifier
+![This is Screenshot of the Randome Forest Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+Precision: 1.000
+Recall: 0.853
+Accuracy: 0.975
+F1 Score: 0.921
+
+### 2. Logistic Regression
+![This is Screenshot of the Logistic Regression.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+Precision: 0.973
+Recall: 0.746
+Accuracy: 0.953
+F1 Score: 0.845
+
+### 3. KNN Classifier
+![This is Screenshot of the KNN Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+Precision: 1.000
+Recall: 0.000
+Accuracy: 0.830
+F1 Score: 0.000
+
+This is the result of all the Regression Models:
+![This is Screenshot of Results of all the Regression Models.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+
+# Contributors
+* Krupesh Parmar (202101160) - Data Cleaning and Modeling
+* Vrishin Shah (202101094) - Modeling
+* Srikar Padaliya (202101095) - Data Preprocessing 
+* Aditya Singhania (202101086) - Data Visualization 
+* Kirtan Mevada (202101012) - Documentation
