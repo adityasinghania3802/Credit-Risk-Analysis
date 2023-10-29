@@ -5,11 +5,12 @@ The dataset contains complete loan data for all loans issued through the year 20
 
 This project consists of 6 parts:
 1. Introduction
-2. Data Cleaning and Preprocessing
+2. Data Cleaning
 3. Data visualization
-4. Modeling
-5. Inference
-6. Conclusion
+4. Preprocessing
+5. Modeling
+6. Inference
+7. Conclusion
 
 # 1. Introduction
 This dataset contains total of **8,55,969 records** with **73 features** including target variable.
@@ -96,9 +97,9 @@ We can impute them with remaining other values if and only if the remaining data
 
 We are filling the null values(NaN) in the next_pymnt_d using the knowledge of the filled cells.
 
-##Data Visualization
+# 3. Data Visualization
 
-![This is Screenshot of the total counts of Borrowers.]()
+![This is Screenshot of the total counts of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
 
 Most borrowers have taken loan for debt consolidation, credit card and home
 improvement.Debt consolidation can simplify repayments and potentially offer lower interest rates.Some borrowers are managing their short-term financial needs through credit cards.
@@ -107,8 +108,56 @@ Majority of borrowers have home_ownership status as rent and mortgage. Few of th
 
 Most borrowers have loan rating as B and C. Grades B and C typically indicate a range where borrowers may have a satisfactory but not excellent creditworthiness.
 
+![This is Screenshot of Piechats of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
 
+One-third of borrowers income is not verified. This could be due to various reasons such as self-employment, irregular income, or difficulties in obtaining employment verification documents.
 
+Most borrowers have opted for short term loans, i.e, 36 months. Lenders may encourage or prefer shorter-term loans to mitigate their risk exposure. Opting for a shorter-term loan could mean higher monthly payments but also a quicker payoff, allowing borrowers to free up their budgets sooner.
 
+Only 5% borrowers having default means stable economic conditions and reflects positively on the lender's ability to evaluate credit risk and make sound lending decisions.
+---
+Majority Borrowers are from California, New York, Texas and Florida. The concentration of borrowers in these states could be influenced by higher population density and increased economic activity. Borrowers from economically stable regions may have greater confidence in their ability to repay loans.
 
+![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+
+The median income of borrower is $65k which suggests a moderate income level within the borrower population. As the income increases, the count of borrowers decreases. Less borrowers in income range 0-25k suggests lender avoid giving loan due to high credit risk.
+
+Amount of loan taken is mostly between 5k-15k. This may indicate addressing immediate expenses or making moderate-sized investments. From a lender's perspective, smaller loan amounts may be perceived as lower risk.
+
+Borrowers with a debt-to-income ratio in the range of 15-20% could indicate a balanced approach to managing debt obligations. They are likely mindful of not overcommitting their income to debt repayment, leaving room for other financial priorities. From a lender's perspective, borrowers with a debt-to-income ratio in the 15-20% range may represent a lower risk profile.
+
+![This is Screenshot of the all the Distributions.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+
+Interest rate is mostly between 10-15%. Lenders often use risk-based pricing, where the interest rate is influenced by the borrower's creditworthiness. Borrowers with rates in this range may have credit profiles that place them in a moderate risk category.
+Monthly installment amount mostly ranges between $200-500.
+Interest amount paid peaks around $2000.
+Most of the borrowers have employment length greater than 10 years. Borrowers with employment lengths exceeding 10 years may be perceived as having stable and secure employment. Lenders may view such borrowers favorably, considering their long-term commitment to their current job.
+
+# 4. Data preprocessing
+* We can impute such columns where we have majority of known data.
+* Imputing the missing values in 'tot_coll_bal', 'tot_cur_bal', 'revol_util' and
+'total_rev_hi_lim' with the median of the filled cells, of its respective columns.
+
+![This is Screenshot of the Home Owners.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+
+we can see that home ownership is categorical column with values as:
+* Rent
+* Own
+* Any
+* Mortgage
+* other
+* None
+We can remove instance of home ownership with type "Any" as it can be any of the type shown above.
+---
+* we need to find the time for which credit was issued.
+* From the attributes defination 25 and 47 which is first date when borrower's credit line was issued and last date when borrower's credit line was reviewed by the lender for further decision.
+* we can find the length by finding the difference between those two dates and further making new column of difference.
+
+### Feature Selection
+* we can see that there is high correlation between { total_payment_inv , total_pymnt , total_rec_prncp , installment}
+* similarly between {loan_amnt , funded_amnt , funded_amnt_inv}
+* same for {sub_grade , int_rate}
+Thus we can keep one of them and drop rest to reduce the redundancy in feature which ultimately reduces overfitting of dataset.
+
+We are now left with **30 columns** and **797436 instances** to work with.
 
