@@ -99,7 +99,7 @@ We are filling the null values(NaN) in the next_pymnt_d using the knowledge of t
 
 # 3. Data Visualization
 
-![This is Screenshot of the total counts of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+![This is Screenshot of the total counts of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_Count_Borrowers.png)
 
 Most borrowers have taken loan for debt consolidation, credit card and home
 improvement.Debt consolidation can simplify repayments and potentially offer lower interest rates.Some borrowers are managing their short-term financial needs through credit cards.
@@ -108,7 +108,7 @@ Majority of borrowers have home_ownership status as rent and mortgage. Few of th
 
 Most borrowers have loan rating as B and C. Grades B and C typically indicate a range where borrowers may have a satisfactory but not excellent creditworthiness.
 
-![This is Screenshot of Piechats of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_PieCharts.png)
+![This is Screenshot of Piechats of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_PieCharts.png)
 
 One-third of borrowers income is not verified. This could be due to various reasons such as self-employment, irregular income, or difficulties in obtaining employment verification documents.
 
@@ -116,11 +116,11 @@ Most borrowers have opted for short term loans, i.e, 36 months. Lenders may enco
 
 Only 5% borrowers having default means stable economic conditions and reflects positively on the lender's ability to evaluate credit risk and make sound lending decisions.
 
-![This is Screenshot of Borrowers from US State.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_PieCharts.png)
+![This is Screenshot of Borrowers from US State.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_UsState.png)
 
 Majority Borrowers are from California, New York, Texas and Florida. The concentration of borrowers in these states could be influenced by higher population density and increased economic activity. Borrowers from economically stable regions may have greater confidence in their ability to repay loans.
 
-![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Range_Borrowers.png)
+![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_Range_Borrowers.png)
 
 The median income of borrower is $65k which suggests a moderate income level within the borrower population. As the income increases, the count of borrowers decreases. Less borrowers in income range 0-25k suggests lender avoid giving loan due to high credit risk.
 
@@ -128,7 +128,7 @@ Amount of loan taken is mostly between 5k-15k. This may indicate addressing imme
 
 Borrowers with a debt-to-income ratio in the range of 15-20% could indicate a balanced approach to managing debt obligations. They are likely mindful of not overcommitting their income to debt repayment, leaving room for other financial priorities. From a lender's perspective, borrowers with a debt-to-income ratio in the 15-20% range may represent a lower risk profile.
 
-![This is Screenshot of the all the Distributions.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Distribution.png)
+![This is Screenshot of the all the Distributions.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_Distribution.png)
 
 Interest rate is mostly between 10-15%. Lenders often use risk-based pricing, where the interest rate is influenced by the borrower's creditworthiness. Borrowers with rates in this range may have credit profiles that place them in a moderate risk category.
 Monthly installment amount mostly ranges between $200-500.
@@ -140,7 +140,7 @@ Most of the borrowers have employment length greater than 10 years. Borrowers wi
 * Imputing the missing values in 'tot_coll_bal', 'tot_cur_bal', 'revol_util' and
 'total_rev_hi_lim' with the median of the filled cells, of its respective columns.
 
-![This is Screenshot of the Home Owners.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+![This is Screenshot of the Home Owners.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_Homeowners.png)
 
 we can see that home ownership is categorical column with values as:
 * Rent
@@ -165,28 +165,35 @@ We are now left with **30 columns** and **797436 instances** to work with.
 
 # 5. Modeling
 ### 1. Random Forest Classifier
-![This is Screenshot of the Randome Forest Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
-Precision: 1.000
-Recall: 0.853
-Accuracy: 0.975
-F1 Score: 0.921
+
+![This is Screenshot of the Randome Forest Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_RandomForest.png)
+
+**Precision:** 1.000
+**Recall:** 0.853
+**Accuracy:** 0.975
+**F1 Score:** 0.921
 
 ### 2. Logistic Regression
-![This is Screenshot of the Logistic Regression.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
-Precision: 0.973
-Recall: 0.746
-Accuracy: 0.953
-F1 Score: 0.845
+
+![This is Screenshot of the Logistic Regression.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_LogisticRegresion.png)
+
+**Precision:** 0.973
+**Recall:** 0.746
+**Accuracy:** 0.953
+**F1 Score:** 0.845
 
 ### 3. KNN Classifier
-![This is Screenshot of the KNN Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
-Precision: 1.000
-Recall: 0.000
-Accuracy: 0.830
-F1 Score: 0.000
+
+![This is Screenshot of the KNN Classifier.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_KNNClassifier.png)
+
+**Precision:** 1.000
+**Recall:** 0.000
+**Accuracy:** 0.830
+**F1 Score:** 0.000
 
 This is the result of all the Regression Models:
-![This is Screenshot of Results of all the Regression Models.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
+
+![This is Screenshot of Results of all the Regression Models.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Images/Screenshot_FinalResults.png)
 
 # Contributors
 * Krupesh Parmar (202101160) - Data Cleaning and Modeling
