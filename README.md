@@ -108,7 +108,7 @@ Majority of borrowers have home_ownership status as rent and mortgage. Few of th
 
 Most borrowers have loan rating as B and C. Grades B and C typically indicate a range where borrowers may have a satisfactory but not excellent creditworthiness.
 
-![This is Screenshot of Piechats of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+![This is Screenshot of Piechats of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_PieCharts.png)
 
 One-third of borrowers income is not verified. This could be due to various reasons such as self-employment, irregular income, or difficulties in obtaining employment verification documents.
 
@@ -118,7 +118,7 @@ Only 5% borrowers having default means stable economic conditions and reflects p
 ---
 Majority Borrowers are from California, New York, Texas and Florida. The concentration of borrowers in these states could be influenced by higher population density and increased economic activity. Borrowers from economically stable regions may have greater confidence in their ability to repay loans.
 
-![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+![This is Screenshot of the all the Ranges of Borrowers.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Range_Borrowers.png)
 
 The median income of borrower is $65k which suggests a moderate income level within the borrower population. As the income increases, the count of borrowers decreases. Less borrowers in income range 0-25k suggests lender avoid giving loan due to high credit risk.
 
@@ -126,7 +126,7 @@ Amount of loan taken is mostly between 5k-15k. This may indicate addressing imme
 
 Borrowers with a debt-to-income ratio in the range of 15-20% could indicate a balanced approach to managing debt obligations. They are likely mindful of not overcommitting their income to debt repayment, leaving room for other financial priorities. From a lender's perspective, borrowers with a debt-to-income ratio in the 15-20% range may represent a lower risk profile.
 
-![This is Screenshot of the all the Distributions.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+![This is Screenshot of the all the Distributions.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Distribution.png)
 
 Interest rate is mostly between 10-15%. Lenders often use risk-based pricing, where the interest rate is influenced by the borrower's creditworthiness. Borrowers with rates in this range may have credit profiles that place them in a moderate risk category.
 Monthly installment amount mostly ranges between $200-500.
@@ -138,7 +138,7 @@ Most of the borrowers have employment length greater than 10 years. Borrowers wi
 * Imputing the missing values in 'tot_coll_bal', 'tot_cur_bal', 'revol_util' and
 'total_rev_hi_lim' with the median of the filled cells, of its respective columns.
 
-![This is Screenshot of the Home Owners.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Count_Borrowers.png)
+![This is Screenshot of the Home Owners.](https://github.com/adityasinghania3802/Credit-Risk-Analysis/blob/main/Screenshot_Homeowners.png)
 
 we can see that home ownership is categorical column with values as:
 * Rent
